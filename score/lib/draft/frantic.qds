@@ -1,0 +1,17 @@
+BPM: 242
+GRID: 1/32
+SWING: 54
+BARS: 2
+%humanize=±8ms
+SEED: 999
+
+[Main]
+# "fastest coherent and frantic" — full-energy barrage but with structure
+# alternating kick/snare engine, machine-gun hats, occasional open bursts
+
+Q: X.x.x.x.X.x.x.x. | X.x.x.x.X.x.x.x.
+W: .... X... .... X.|.... X... .... X.
+E: .... .... .... .... | .... .... .... ....
+R: x.x.x.x.x.x.x.x. | x.x.x.x.x.x.x.x.
+T: .... .... x... .... | .... .... x... ....
+Y: .... .... .... X.. | .... .... .... x..

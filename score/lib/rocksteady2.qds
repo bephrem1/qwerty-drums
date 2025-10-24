@@ -1,0 +1,13 @@
+BPM: 110
+GRID: 1/16
+SWING: 52
+BARS: 2
+%humanize=±7ms
+# Q=kick, W=snare, R=closed hat, Y=open hat
+
+[Main]
+# bar 1: solid backbeat, hats steady
+Q: X... .... X... .... | X... ..x. X... ....
+W: .... X... .... X... | .... X... .... X...
+R: X.X. X.X. X.X. X.X. | X.X. X.X. X.X. X.X.
+Y: .... .... .... .... | .... .... .... x...

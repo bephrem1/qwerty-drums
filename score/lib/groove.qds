@@ -1,0 +1,15 @@
+BPM: 92
+GRID: 1/16
+SWING: 62
+BARS: 2
+%humanize=±10ms
+# Q=kick, W=snare, R=closed hat, E=clap, Y=open hat
+
+[Main]
+# bar 1 – swung, syncopated pocket
+Q: X... ..x. X... .... | ..x. X... X... ..x.
+W: .... X... .... X... | .... X... .... X...
+E: .... .... .... .... | .... .... ..x. ....
+R: X.X. X..X X.X. X..X | X.X. X..X X.X. X..X
+Y: .... .... .... x... | .... .... .... ....
+

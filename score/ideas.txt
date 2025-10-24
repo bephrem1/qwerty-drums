@@ -1,0 +1,55 @@
+🥁 1. Genre / Era Scores
+
+These are useful prompt words that imply a tempo, swing, and groove.
+
+Score Name	Typical BPM	Description / Feel
+Boom-Bap 90s	88–96	Sparse kicks, hard snares, swingy 16th hats, occasional clap. Think DJ Premier, Tribe.
+Trap Modern	130–150	Triplet/32nd hats, rolling snares, layered claps, deep 808-style kick.
+West Coast G-Funk	92–100	Laid-back, wide-spaced hats, bright claps on 2/4, swing around 58–60.
+Lo-Fi Chillhop	70–85	Gentle kicks, ghost snares, dusty hats, high swing, low velocity.
+Jazz Brush Ride	120–180	Rides on Y, light ghost snares, subtle offbeat kick.
+House / Deep House	118–124	Straight 4-on-the-floor kick, open hats on offbeats.
+Techno / Minimal	120–135	Repetitive, mechanical, low swing, probability variation over time.
+Dilla-esque Humanized	86–94	Extreme swing (62–65), ghost snares, off-grid hats.
+Drill / UK	140	Sparse, sliding feel, syncopated hi-hats, missing snares.
+Afrobeats	96–110	Offbeat snares/claps, syncopated open hats, percussive shuffle.
+Reggaeton / Dem-Bow	90–100	Kick-snare “boom-ch-boom-chick” pattern, repeating groove.
+🧠 2. Structural Scores (by rhythm pattern)
+
+You can also think of “scores” as metapatterns — shapes of rhythm you can apply to any sound set.
+
+Score Type	Concept	Description
+Grid-Tight	GRID: 1/16, SWING: 50	Robotic, techno feel.
+Loose Humanized	%humanize=±15ms, SWING: 60	Dilla / human feel.
+Call-and-Response	Alternating Q/W vs E/R	Kick–snare motif answered by hat/click.
+Syncopated Layered	Offset snares (^+1)	Creates groove tension.
+Rolling Hat Engine	R@1/32 + random [p=70]	Modern trap texture.
+Sparse Pocket	few Q, strong W, minimal R/T	Boom-bap simplicity.
+Fills & Ghosts	%chance(20){...} mini sections	Random short fills.
+Polyrhythmic Overlay	e.g. R@LEN=12	Uneven loops creating evolving texture.
+Evolving Probabilistic	p=40–100 ramp	Lush, “alive” beat.
+🎬 3. Cinematic / Mood Scores
+
+For when the beat serves a scene or vibe rather than a song.
+
+Score	Mood / Use
+Tense Pulse – minimal kick, sparse hats, heartbeat pacing.	
+Urban Night – slow lo-fi, brushed snare, jazzy open hats.	
+Startup Montage – mid-tempo, crisp hats, layered claps.	
+Slow Burn Suspense – irregular kick, off-grid hats, low velocities.	
+Triumphant Groove – bright hats, hard snares, repeating 2-bar loop.	
+Romantic Vinyl Dust – swingy brushes, filtered highs, gentle clap.	
+Club Scene / Techno Pulse – 4/4 kicks, evolving hats, accent loops.	
+Chaos Cutscene – heavy probability variation, rolls, random hits.	
+🧩 4. Algorithmic / Meta Scores
+
+Prompt concepts for generative logic or procedural rhythm.
+
+Score	Idea
+Fractal – subdivide each bar recursively (1/4 → 1/8 → 1/16 patterns).	
+Markov – use probability of last hit to decide next.	
+Euclidean – distribute N hits evenly over M steps.	
+Swing Drift – swing varies per bar (55→65).	
+Erosion / Growth – remove or add hits each loop.	
+Phase Shift – offset one track slowly over time (R^+1 every 8 bars).	
+Call-Response AI – generate 2 bars “call” + 2 bars “response” variation.

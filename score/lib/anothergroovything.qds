@@ -1,0 +1,13 @@
+BPM: 108
+GRID: 1/16
+SWING: 56
+BARS: 2
+%humanize=±8ms
+# Q=kick, W=snare, E=clap, R=closed hat, Y=open hat
+
+[Main]
+Q: X... ..x. X.x. .... | X... ..x. X..x ....
+W: .... X... .... X... | .... X... .... X...
+E: .... .... .... .... | .... .... ..x. ....
+R: X.X. X.X. X.X. X.X. | X.X. X.X. X.X. X.X.
+Y: .... .... .... .... | .... .... x... ....

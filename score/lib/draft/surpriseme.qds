@@ -1,0 +1,17 @@
+BPM: 128
+GRID: 1/16
+SWING: 57
+BARS: 2
+%humanize=±9ms
+SEED: 888
+
+[Main]
+# broken-club / future-jazz hybrid
+# punchy kicks, displaced snares, syncopated hats with ghost layers
+
+Q: X... .... x... .... | .... X... .... x...
+W: .... g.X. .... .... | .... X... .... g.X.
+E: .... .... .... X... | .... .... X... ....
+R@1/32: x..x.r3x...x.x.|x..r5x..x.x.r3x...
+T: .... .... .... .... | .... .... x... ....
+Y: .... .... x... .... | .... x... .... x...

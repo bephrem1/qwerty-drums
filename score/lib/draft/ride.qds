@@ -1,0 +1,20 @@
+# QDS v1
+BPM=110
+GRID=1/16
+SWING=52
+BARS=2
+# Q=kick  W=snare  R=hi-hat  Y=open-hat
+
+@A
+1: Q . . . W . . . Q . . . W . . .
+2: R R R R R R R R R R R R R R R R
+3: . . . . . . . . . . . . Y . . .
+4: Q . . . . . . . Q . . . . . . .
+
+@B
+1: Q . . . W . . . Q . . . W . . .
+2: R R R R R R R R R R R R R R R R
+3: . . . . . . . . . . . . Y . . .
+4: Q . . . . . . . Q . . . . . . .
+
+!order A,B

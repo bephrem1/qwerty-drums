@@ -1,0 +1,93 @@
+QWERTY Drum Script (QDS)
+
+Q = kick (low)
+W = snare (mid)
+E = clap
+R = tight hi-hat
+T = sizzly hi-hat
+Y = open hat / ride
+U = BINK! (gritty upbeat)
+
+1) File/header
+BPM: 92
+BARS: 2
+GRID: 1/16        # default note resolution
+SWING: 55         # 50 = straight, >50 = late offbeats
+SEED: 13          # optional, for reproducible randomness
+
+
+BPM tempo.
+BARS total bars (loop length).
+GRID base step (1/8, 1/16, 1/32).
+SWING percent feel (applies to offbeats).
+SEED keeps “randomize” features deterministic.
+
+2) Track lines
+Each instrument is a line starting with its symbol and a colon:
+Q: x... x... x.x. x...
+
+Dots are rests. Spaces are just visual; barlines optional (| or grouping every 4 steps).
+
+x = normal hit.
+X = accented hit (velocity boost).
+g = ghost (softer).
+~ = flam (quick grace hit before step).
+rN = roll of N evenly-spaced hits inside the step (e.g., r3, r5).
+^±n = microshift by n micro-steps (micro-grid = GRID/4). Example x^+1.
+[p=40] = probability the hit plays (0–100).
+{vel=80,len=1/8} = inline attributes; may combine: {vel=95,prob=70}
+- = sustain tail (useful only for Y if you want longer ring; executor can use sample length otherwise).
+
+You can place modifiers immediately after a hit, e.g. x! is same as X, or x{vel=70}.
+
+R: x.x.x.x.x.x.x.x.          # straight 16ths hat
+T: .... x... .... x...       # offbeat sizzly hats
+Y: .... .... .... x---       # bar-end open hat with sustain
+W: .... x... .... x...       # 2 & 4 snare
+Q: X... .... x... ....       # kicks on 1 and “and of 2”
+
+3) Sections & arrangement
+
+Use named sections and an order:
+
+[Intro]
+R: x... x... x... x...
+T: .... .... .... ....
+Q: x... .... x... ....
+
+[Main]
+R: x.x.x.x.x.x.x.x.
+W: .... x... .... x...
+Q: X... .... x.g. ....
+
+[Fill]
+R: x.r3x r3x. x.r5x r5x.
+W: .... .... g..X g...
+Q: X... ..x. .x.. X...
+
+ORDER: Intro x2, Main x4, Fill x1, Main x∞
+
+ORDER allows quick song forms. x∞ means loop there.
+
+4) Polymeter & local grid changes (optional but powerful)
+You can override GRID per track:
+
+R@1/32: x.r3x.x.r3x.x.r5x.x.r5x.   # trap 32nd notey hats
+
+Or set LENGTH (steps per bar) for odd cycles:
+
+R@LEN=12: x.x.x.x.x.x.x.x.x.x.x.x.  # 12-step hat over 16-step bar
+
+5) Macros for variation
+
+%humanize=±8ms (header or per track)
+%var(n=2) creates two automatic alternates by toggling ghosts/accents.
+%chance(20){ ... } wrap a mini-pattern that only triggers sometimes (great for fills).
+
+Example:
+%humanize=±12ms
+%chance(15){ Y: .... .... .... x--- }
+
+6) Comments
+
+# anything to end of line.

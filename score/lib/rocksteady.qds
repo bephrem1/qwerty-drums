@@ -1,0 +1,17 @@
+BPM: 118
+GRID: 1/16
+SWING: 52
+BARS: 2
+%humanize=±7ms
+SEED: 5150
+
+[Main]
+# straight-ahead rock pocket — steady hat, kick 1&3, snare 2&4.
+# built to drive guitars, not fancy.
+
+Q: X... .... X... .... | X... .... X... ....
+W: .... X... .... X... | .... X... .... X...
+E: .... .... .... .... | .... .... .... ....
+R: X.X. X.X. X.X. X.X. | X.X. X.X. X.X. X.X.
+T: .... .... .... .... | .... .... .... ....
+Y: .... .... .... .... | .... .... .... ....
